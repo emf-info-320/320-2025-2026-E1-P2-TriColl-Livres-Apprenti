@@ -1,0 +1,43 @@
+Button {
+    -fx-text-fill: #000;
+    -fx-font-size: 13px;
+    
+    -fx-background-color: #E4DBC7;
+    -fx-background-radius : 5px;
+
+    -fx-border-color: rgb(94, 83, 62);
+    -fx-border-width: 0.3px;
+    -fx-border-radius: 5px;
+}
+
+.root {
+    -fx-background-color: #fdf8eb;
+    -fx-border-width: 1px;
+    -fx-border-color: rgb(94, 83, 62);
+}
+
+.texteTitre{
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;   
+}
+
+.text-field {
+    -fx-control-inner-background: white;
+    -fx-text-inner-color: black;
+    -fx-background-insets: 0;
+    -fx-border-width: 0.4px;
+    -fx-border-color: rgb(94, 83, 62);
+    
+    -fx-border-radius: 5px;
+}
+
+#titre {
+    -fx-background-color: #B3A483;
+    -fx-border-width: 0.4px;
+    -fx-border-color: rgb(94, 83, 62);
+}
+
+#textePrincipal Text{
+    -fx-fill: #FFF2DA;
+    -fx-font-size: 16px;
+}

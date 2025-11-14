@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../css/css2.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.LivreView">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="141.0" prefWidth="161.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="482.0" minWidth="10.0" prefWidth="211.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="474.0" minWidth="191.0" prefWidth="218.0" />
+      <ColumnConstraints />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="194.0" minHeight="92.0" prefHeight="92.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="316.0" minHeight="280.0" prefHeight="308.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <HBox id="titre" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnSpan="4">
+         <children>
+            <ImageView fitHeight="66.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Library-Books-PNG-Clipart-Background.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </ImageView>
+            <Text id="textePrincipal" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="texteTitre" text="%titreLivre" />
+            <Text id="textePrincipal" fx:id="txtNom" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="texteTitre" text=" nom">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </Text>
+            <ImageView fitHeight="66.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Library-Books-PNG-Clipart-Background.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
+         <children>
+            <HBox prefHeight="33.0" prefWidth="190.0">
+               <children>
+                  <CheckBox fx:id="chckbx_auteur" mnemonicParsing="false">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </CheckBox>
+                  <Text id="texte" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="texte" text="%txt.filtreAuteur">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+            <ComboBox fx:id="cbbx_auteurs" prefHeight="26.0" prefWidth="172.0" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </VBox.margin></ComboBox>
+            <Region prefHeight="11.0" prefWidth="190.0" />
+            <HBox prefHeight="33.0" prefWidth="190.0">
+               <children>
+                  <CheckBox fx:id="chckbx_langue" mnemonicParsing="false">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </CheckBox>
+                  <Text id="texte" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="texte" text="%txt.filtreLangue">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+            <ComboBox fx:id="cbbx_langues" prefHeight="26.0" prefWidth="172.0">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </VBox.margin></ComboBox>
+            <Region prefHeight="11.0" prefWidth="190.0" />
+            <HBox prefHeight="30.0" prefWidth="190.0">
+               <children>
+                  <CheckBox fx:id="chckbx_annee" mnemonicParsing="false">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </CheckBox>
+                  <Text id="texte" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="texte" text="%txt.filtreAnnee">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <ComboBox fx:id="cbbx_annee" prefHeight="26.0" prefWidth="172.0">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </VBox.margin></ComboBox>
+            <Region prefHeight="95.0" prefWidth="164.0" />
+            <Text fx:id="txtNbrLivre" strokeType="OUTSIDE" strokeWidth="0.0" text="nbrlivre">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin></Text>
+         </children>
+      </VBox>
+      <HBox prefHeight="312.0" prefWidth="232.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <Region prefHeight="307.0" prefWidth="20.0" />
+            <ListView fx:id="lstLivres" prefHeight="179.0" prefWidth="200.0">
+               <HBox.margin>
+                  <Insets bottom="40.0" top="30.0" />
+               </HBox.margin>
+            </ListView>
+            <Region prefHeight="307.0" prefWidth="20.0" />
+         </children>
+      </HBox>
+      <VBox alignment="BOTTOM_RIGHT" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="texte" text="%lblInformations" wrappingWidth="207.6171875" />
+            <TextArea fx:id="txtInformations" prefHeight="162.0" prefWidth="229.0">
+               <VBox.margin>
+                  <Insets right="20.0" />
+               </VBox.margin>
+            </TextArea>
+            <Region prefHeight="37.0" prefWidth="215.0" />
+            <Button fx:id="btnAjouter" mnemonicParsing="false" prefHeight="29.0" prefWidth="73.0" text="%btnAjouter">
+               <VBox.margin>
+                  <Insets right="10.0" />
+               </VBox.margin>
+            </Button>
+            <Region prefHeight="12.0" prefWidth="220.0" />
+            <Button fx:id="btnVoirListe" mnemonicParsing="false" prefHeight="29.0" prefWidth="99.0" text="%btnVoirListe">
+               <VBox.margin>
+                  <Insets bottom="10.0" right="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</GridPane>

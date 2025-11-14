@@ -1,1 +1,19 @@
-# 320-2025-2026-E1-P2-TriColl-Livres-Apprenti
+# 320 - Évaluation E1 Partie 2, tri et collections.
+
+## Ressources autorisées
+## :point_up: ATTENTION
+
+
+> Vous n'avez droit à rien d'autre que:
+> 
+>  ✅ Votre PR
+> 
+>  ✅ Votre projet personnel
+
+> 🚫  Pas d'exercices réalisés
+> 
+> 🚫  Pas d'IA (externe ou interne), pas d'internet, ni aucune autre forme d'aide
+ 
+## Durée
+
+- **180'** 

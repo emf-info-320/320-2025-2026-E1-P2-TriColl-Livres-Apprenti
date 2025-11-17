@@ -89,7 +89,8 @@ public class ListeSelectionView implements IListeSelectionViewForController, Ini
     public void initialize(URL url, ResourceBundle rb) {
         btnOk.setDefaultButton(true);
         
-        raffraichirListe(controller.getListeSelectionDeLivres());
+        //raffraichirListe(controller.getListeSelectionDeLivres());
+        tris();
 
         btnOk.setOnAction(event -> {
             Stage stage = (Stage) btnOk.getScene().getWindow();
@@ -151,7 +152,8 @@ public class ListeSelectionView implements IListeSelectionViewForController, Ini
         }
         else if(rdbtn_triParDate.isSelected())
         {
-            controller.triParAnneePublication(); 
+            controller.triParAnneePublication();
+            lstLivresALire.refresh(); 
         }
     }
 

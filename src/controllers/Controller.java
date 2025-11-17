@@ -114,6 +114,7 @@ public class Controller implements IControllerForView, IControllerForLivreView, 
     //Méthodes surchargées de l'interface IControllerForListeSelectionView
     //---------------------------------------------------------------
 
+    //pas de javadoc fournie mais un diagramme de séquence
     @Override
     public  void supprimerLivre(LivreAlire livre){
         //

@@ -155,13 +155,10 @@ public class ListeSelectionView implements IListeSelectionViewForController, Ini
         }
     }
 
-    //à décommenter par apprenti ?
     private void supprimerLivre() {
         //Cette instruction vous retourne l'instanc du livre sélectionné
         LivreAlire livreAlire = lstLivresALire.getSelectionModel().getSelectedItem();
 
-        //à coder par apprenti
-        //à coder par apprenti
         controller.supprimerLivre(livreAlire);
     }
 }

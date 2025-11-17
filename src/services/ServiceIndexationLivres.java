@@ -184,7 +184,6 @@ public class ServiceIndexationLivres {
 
       /**
      * Retourne très rapidement la liste complète des livres sans doublons
-     * Si aucun livre n'est trouvé, une liste vide est retournée.
      * La liste est triée par ordre alphabétique des titres.
      * 
      * @return une Array liste de livres
@@ -210,7 +209,6 @@ public class ServiceIndexationLivres {
      * Retourne très rapidement la liste des livres correspondant à l'année de publication passée
      * en paramètre
      * La liste est triées par ordre alphabétique des titres
-     * Si aucun livre de correspond, une liste vide est retournée.
      * 
      * @param annee l'année pour laquelle la liste de livre est souhaitée
      * @return une Array liste de livres
@@ -236,7 +234,6 @@ public class ServiceIndexationLivres {
      * en paramètre.
      * Le livre est sélectinné même si l'auteur ne l'a pas écrit seul.
      * La liste est triées par ordre alphabétique des titres
-     * Si aucun livre de correspond, une liste vide est retournée.
      * 
      * @param auteur l'auteur pour lequel la liste de livre est souhaitée
      * @return une Array liste de livres
@@ -261,7 +258,6 @@ public class ServiceIndexationLivres {
      * Retourne très rapidement la liste des livres correspondant à la langue passée
      * en paramètre.
      * La liste est triées par ordre alphabétique des titres
-     * Si aucun livre de correspond, une liste vide est retournée.
      * 
      * @param langue la langue pour laquelle la liste de livre est souhaitée
      * @return une Array liste de livres
@@ -287,9 +283,8 @@ public class ServiceIndexationLivres {
      * en paramètres.
      * Le livre est sélectinné même si l'auteur ne l'a pas écrit seul.
      * La liste est triées par ordre alphabétique des titres      
-     * Si aucun livre de correspond, une liste vide est retournée.
      * 
-     * @param annee l'auteur pour laquelle la liste de livre est souhaitée
+     * @param auteur l'auteur pour laquelle la liste de livre est souhaitée
      * @param annee la langue pour laquelle la liste de livre est souhaitée
      * @return une Array liste de livres
      */

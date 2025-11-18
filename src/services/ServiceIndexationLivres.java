@@ -285,7 +285,7 @@ public class ServiceIndexationLivres {
      * La liste est triées par ordre alphabétique des titres      
      * 
      * @param auteur l'auteur pour laquelle la liste de livre est souhaitée
-     * @param annee la langue pour laquelle la liste de livre est souhaitée
+     * @param langue la langue pour laquelle la liste de livre est souhaitée
      * @return une Array liste de livres
      */
 
